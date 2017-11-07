@@ -6,8 +6,8 @@ function newNum() {
 function newColor() {
   var canvas = document.getElementById('canvas');
   var ctx = canvas.getContext("2d");
-  var colorVals = "0123456789ABCDEF".split('');
-  var finColor = "#" += colorVals[Math.floor(Math.random() * 16)]
+  var colorVals = '0123456789ABCDEF'.split('');
+  var finColor = "#";
   for (var i = 0; i < 6; i++) {
     hex += colorVals[Math.floor(Math.random() * 16)]
   }
