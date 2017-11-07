@@ -14,3 +14,7 @@ function newColor() {
   ctx.fillStyle = finColor;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
+
+function refresh() {
+  location.reload();
+}
