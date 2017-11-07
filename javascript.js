@@ -1,4 +1,4 @@
-function randomNum() {
+function newNum() {
   var randomNum = Math.floor(Math.random()*100);
   document.getElementById('numDisplay').innerHTML = randomNum;
 }
