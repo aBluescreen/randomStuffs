@@ -11,6 +11,6 @@ function newColor() {
   for (var i = 0; i < 6; i++) {
     finColor += colorVals[Math.floor(Math.random() * 16)]
   }
-  ctx.fillStyle = finColor
+  ctx.fillStyle = finColor;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
