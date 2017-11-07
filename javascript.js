@@ -9,8 +9,8 @@ function newColor() {
   var colorVals = '0123456789ABCDEF'.split('');
   var finColor = "#";
   for (var i = 0; i < 6; i++) {
-    hex += colorVals[Math.floor(Math.random() * 16)]
+    finColor += colorVals[Math.floor(Math.random() * 16)]
   }
-  ctx.fillStyle = hex
+  ctx.fillStyle = finColor
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
