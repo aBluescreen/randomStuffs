@@ -18,7 +18,7 @@ function newColor() {
 var ball;
 
 function startAni() {
-  ball = new PVector(50, 50);
+  ball = new component(30, 30, "red", 100, 100);
   aniArea.start();
 }
 
