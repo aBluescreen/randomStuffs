@@ -4,7 +4,7 @@ function newNum() {
 }
 
 function newColor() {
-  var canvas = document.getElementById('canvas');
+  var canvas = document.getElementById('color');
   var ctx = canvas.getContext("2d");
   var colorVals = '0123456789ABCDEF'.split('');
   var finColor = "#";
@@ -15,6 +15,10 @@ function newColor() {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
-function refresh() {
-  location.reload();
+draw = function() {
+  var canvas = document.getElementById('animation');
+  var ctx = canvas.getContext("2d");
+  ctx.beginPath();
+  ctx.arc(95,50,40,0,2*Math.PI);
+  ctx.stroke();
 }
