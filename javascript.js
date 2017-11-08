@@ -15,7 +15,7 @@ function newColor() {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
-draw = function() {
+draw = animation() {
   var canvas = document.getElementById('animation');
   var ctx = canvas.getContext("2d");
   ctx.beginPath();
