@@ -14,10 +14,15 @@ function newColor() {
   ctx.fillStyle = finColor;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
-function animation() {
+
+var ball;
+
+function startAni() {
+  ball = new PVector(50, 50);
+  aniArea.start();
+}
+
+function ani() {
   var canvas = document.getElementById('animation');
   var ctx = canvas.getContext("2d");
-  ctx.beginPath();
-  ctx.arc(95,50,40,0,2*Math.PI);
-  ctx.stroke();
 }
